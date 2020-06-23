@@ -1,0 +1,344 @@
+body {font-family: "Lato", sans-serif;}
+
+/*===========================
+   Cтили для начального окна,
+   без авторизации
+===========================*/
+#logoLogin {
+  width: 200px;
+  height: 200px;
+}
+
+#logoLogin img {
+  width: : 100%;
+  height: 100%;
+}
+/*===========================
+  конец стилей для начального 
+  окна, без авторизации
+===========================*/
+
+
+
+ /*===========================
+   Cтили для левого navBar
+===========================*/
+.sidebar {
+  height: 100%;
+  width: 235px;
+  position: fixed;
+  /*z-index: 1;*/
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  /*font-family: Times New Roman;*/
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  width: 80%; 
+  margin-left: 235px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+#logo img {
+  width: : 100%;
+  height: 100%;
+}
+/*===========================
+конец стилей для левого navBar
+===========================*/
+
+
+ /*===========================
+   Cтили для кнопки логина
+===========================*/
+#header {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+
+#exit {
+  margin-right: 18px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  float: right;
+}
+
+#exit img {
+  top: -7px;
+  margin-left: 5px;
+  width: : 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.login { 
+  float: right;
+  display: block;
+  margin-left: 235px;
+  /*background-color: red;*/
+}
+/*стиль для кнопки, у которой title равен del*/
+.login button {
+  padding: 10px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #f9eeee;
+  background-color: #382828;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.button:hover {background-color: #4CAF50}
+
+.login a {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Times New Roman;
+  font-weight: bolder;
+  display: block;
+  float: left;
+  padding: 14px 10px 0;
+}
+
+.login a:hover {
+  background: black;
+  color: white;
+}
+/*===========================
+   конец стилей для логина
+===========================*/       
+
+
+/*===========================
+    Стили для таблицы
+===========================*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table a {
+  color: #0000FF;
+}
+
+table a:visited {
+  color: #bfabab;
+}
+/*===========================
+   конец стилей для таблицы
+===========================*/
+
+/*===========================
+ Cтили для кнопок для таблицы
+===========================*/
+.button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #f9eeee;
+  background-color: #382828;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+}
+/*стиль для кнопки, у которой title равен del*/
+.button[title="del"] {
+  background-color: #c11717;
+}
+
+/*стиль для кнопки, у которой title равен del*/
+.button[title="event"] {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.button:hover {background-color: #4CAF50}
+/*===========================
+   конец стилей для кнопок
+===========================*/
+
+
+/*===========================
+      Стили для формы
+===========================*/
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+   width: 80%; 
+  margin-left: 235px;
+}
+
+/*===========================
+   конец стилей для кнопок
+===========================*/
+
+
+/*===========================
+  Стили для хлебных крошек
+===========================*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 5px;
+  font-family: Times New Roman;
+  font-size: 18px;
+  text-decoration: none;
+}
+/*===========================
+конец стилей для хлебных крошек
+===========================*/
+
+
+/*===========================
+    Стили для календаря
+===========================*/
+.calender {
+  width: 800px;
+  height: 600px;
+}
+
+.calender a {
+  text-decoration: none;
+   color: black;
+    font-size: 29px;
+}
+
+.calendar input { 
+width: 100px;
+height: 100px;
+}
+
+.cell {
+  width: 100px;
+}
+
+.today{
+    background-color: #86ea86;  
+    width: 50px;
+    font-size: 45px;
+}
+
+.eventForm {
+  width: 335px;
+}
+
+.eventForm label {
+  font-size: 24px;
+  font-weight: bold;
+
+
+  
+}
+.eventForm input, textarea {
+  width: 250px;
+  height: 50px;
+  border: 3px solid black;
+}
+
+.eventForm input {
+  margin-left: 28px;
+}
+
+.event{
+    background-color: #FF8080;
+}
+/*===========================
+ конец стилей для календаря
+===========================*/
+
+/*===========================
+ Cтили для кнопок календаря
+===========================*/
+.eventBttn {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #f9eeee;
+  background-color: #382828;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.eventBttn:hover {background-color: #4CAF50}
