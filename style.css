@@ -1,0 +1,927 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background-color: white;
+	height: 100%;
+	font-family: Consolas;
+}
+
+h2 {
+	color: #3f5368;
+	font-size: 17px;
+}
+
+a {
+	text-decoration: none;
+	color: #3f5368;
+}
+
+.light {
+  background-color: white;
+}
+
+.dark {
+  background-color: #e6e9f5;
+}
+
+/* ==========================
+Блок Header - шапка сайта
+============================*/
+
+#header {
+	width: 100%;
+	height: 64px;
+	margin: 0 auto;
+	/*background: #f4f5fa;*/
+	border-bottom: 1px solid #ebedef;
+}
+
+#logo {
+	width: 220px;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
+#logo img {
+	width: 20%;
+	top: 5px;
+	left: 20px;
+	position: absolute;
+}
+
+#logo span {
+	font-size: 26px;
+	position: absolute;
+	top: 17px;
+	left: 70px;
+	color: #3f5368;
+}
+
+#menu {
+	float: right;
+	height: 100%;
+}
+
+#menu img {
+	height: 26px;
+	width: auto;
+	float: left;
+}
+
+#menu a {
+	color: #3f5368;
+	text-decoration: none;
+	font-size: 17px;
+	height: calc(100% - 20px);
+	display: block;
+	float: left;
+	padding: 18px 15px 0;
+}
+
+#menu a:hover {
+	/*background: #e6e9f5;*/
+	/*border-bottom: 3px solid #3f5368;*/
+}
+
+.menu-active {
+	/*background: #e6e9f5;*/
+	border-bottom: 3px solid #3f5368;
+}
+
+/*#btn_switch {
+	background-image: ('/images/light-off.png');
+}*/
+
+/* ==========================
+Блок Content - основной блок
+============================*/
+
+#content {
+	width: 800px;
+	height: calc(100% - 120px);
+	margin: 0 auto;
+	/*background: white;*/
+	overflow: hidden;
+}
+
+.main {
+	border-left: 1px solid #ebedef;
+	border-right: 1px solid #ebedef;
+}
+
+#content .reasons {
+	width: 25%;
+	display: absolute;
+	float: right;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#content .reasons h2, h3 {
+	color: #3f5368;
+}
+
+#content .left-col {
+	width: 600px;
+	height: 100%;
+	border-right: 1px solid #ebedef;
+	float: left;
+	padding: 10px;
+	overflow-y: auto;
+	background-color: #F5F5F5;
+}
+
+#content .left-col h2 {
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+#content .left-col p {
+	color: #3f5368;
+}
+
+#content .left-col textarea {
+	width: 96%;
+    /*height: 17px;*/
+    border: 1px #a4a5a7 solid;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+}
+
+#content .left-col button {
+	outline: none;
+    background: none;
+    width: auto;
+    height: 38px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px #a4a5a7 solid;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+}
+
+#content .right-col{
+	width: 160px;
+	height: 100%;
+	float: left;
+	padding: 5px;
+}
+
+#content .right-col p {
+	color: #3f5368;
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-bottom: 0;
+}
+
+#content .right-col ul {
+	list-style: none;
+	padding-top: 0;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+
+#content .right-col ul li a {
+	color: #3f5368;
+	text-decoration: none;
+}
+
+#content .right-col ul li a:hover {
+	color: black;
+}
+
+#content .admin-left-col {
+	width: 160px;
+	height: 100%;
+	border-right: 1px solid #ebedef;
+	float: left;
+	/*padding: 10px;*/
+	overflow-y: auto;
+	/*background-color: #F5F5F5;*/
+}
+
+#content .admin-left-col img {
+	width: 35px;
+	height: auto;
+}
+
+#content .admin-left-col .menu-item {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+#content .admin-left-col .active {
+	background-color: #F5F5F5;
+}
+
+
+#content .admin-left-col h3 {
+	margin-top: 0;
+	font-size: 17px;
+	font-weight: normal;
+}
+
+#content .admin-right-col {
+	width: 629px;
+	height: 100%;
+	float: left;
+	padding: 5px;
+	background-color: #F5F5F5;
+}
+
+#content .admin-right-col .add-lesson {
+	margin-top: 10px;
+	margin-bottom: 12px;
+	padding: 10px;
+	float: right;
+}
+
+#content .admin-right-col .add-lesson a {
+	padding: 5px;
+	font-size: 17px;
+}
+
+#content .admin-right-col .add-lesson img {
+	height: 20px;
+    width: auto;
+    float: left;
+}
+
+#content .admin-right-col table {
+	width: 96%;
+	height: auto;
+	color: #3f5368;
+	padding: 10px;
+	margin: 0 auto;
+	font-size: 17px;
+	border-collapse: collapse;
+	border-top: 1px solid #ebedef;
+	border-right: 1px solid #ebedef;
+	border-bottom: 1px solid #ebedef;
+	border-left: 1px solid #ebedef;
+}
+
+#content .admin-right-col table a {
+	float: right;
+	margin-left: 10px;
+}
+
+#content .admin-right-col th {
+	background-color: #ebedef;
+}
+
+#content .admin-right-col td {
+  padding: 10px;
+}
+
+#content .admin-right-col tr:nth-child(odd) {
+  background: white;
+}
+
+#content .admin-right-col tr:nth-child(even) {
+  background: #E8E6D1;
+}
+
+/*Левый блок с пользователями и поиском*/
+
+#users {
+	width: 230px;
+	height: 100%;
+	float: left;
+	background: #ebedef;
+}
+
+#search {
+	height: 30px;
+	padding: 5px 10px 10px 10px;
+}
+
+#search img {
+	height: 17px;
+	margin-right: 3px;
+	padding-top: 5px;
+}
+
+#search input {
+	width: 82%;
+	background: #e4eaec;
+	border: 1px #a4a5a7 solid;
+	border-radius: 8px;
+	height: 26px;
+	padding:  0 5px;
+	margin: 0;
+	float: right;
+	margin-right: 5px;
+	outline: none;
+}
+
+#search button {
+	width: 26px;
+	height: 26px;
+	border: 1px #a4a5a7 solid;
+	border-radius: 8px;
+	background: #e4eaec;
+	outline: none;
+	cursor: pointer;
+	padding: 0px;
+	display: none;
+}
+
+#search button:active {
+	background: #ff9800;
+}
+
+#search button img {
+	width: 75%;
+	height: 75%;
+}
+
+#list {
+	height: calc(100% - 130px);
+	overflow-y: auto;
+	/*margin-right: 10px;*/
+	border-left: 1px solid #ebedef;
+	border-right: 1px solid #ebedef;
+}
+
+#list-saved {
+	height: auto;
+	/*overflow-y: auto;*/
+	/*margin-right: 10px;*/
+	border-left: 1px solid #ebedef;
+	border-right: 1px solid #ebedef;
+}
+
+#list ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#list-saved ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#list ul li a {
+	text-decoration: none;
+	color: #3f5368;
+}
+
+#list-saved ul li a {
+	text-decoration: none;
+	color: #3f5368;
+}
+
+#list ul li {
+	width: calc(100% - 20px);
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 5px;
+	position: relative;
+	overflow-x: visible;
+}
+
+#list-saved ul li {
+	width: calc(100% - 20px);
+	padding: 10px;
+	position: relative;
+	margin-bottom: 10px;
+	overflow-x: visible;
+}
+
+#list ul .active {
+	background-color: white;
+}
+
+#list ul .user {
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+#list-saved ul .user {
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+#list ul .user img {
+	width: 100%;
+	height: 100%;
+}
+
+#list-saved ul .user img {
+	width: 100%;
+	height: 100%;
+}
+
+#list ul li .notify {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: #3f5368;
+	border-radius: 50%;
+	top: 10px;
+	right: 12px;
+}
+
+#list ul li .notify span{
+	position: absolute;
+	color: white;
+	top: 2px;
+	right: 7px;
+}
+
+#list h2 {
+	margin-top: 0;
+	color: #ababab;
+}
+
+#list p {
+	margin-top: -30px;
+	font-size: 14px;
+	color: #ababab;
+	float: right;
+}
+
+#list-saved h2,
+#list-saved p {
+	margin: 0;
+	color: #3f5368;
+}
+
+#list h2 {
+	font-size: 17px;
+	margin-bottom: 5px;
+	padding: 8px;
+	color: #3f5368;
+}
+
+#list-saved h2 {
+	font-size: 17px;
+	margin-bottom: 5px;
+	color: #3f5368;
+}
+
+#list-saved ul .active {
+	background-color: white;
+}
+
+/*Правый блок для отображения сообщений*/
+
+#messages {
+	width: calc(800px - 230px);
+	float: right;
+	height: 100%;
+	background: white;
+}
+
+#message-list {
+	height: 88%;
+	overflow-y: auto;
+	/*border-right: 1px solid #F5F5F5;
+	border-bottom: 1px solid #F5F5F5;*/
+}
+
+#dialogue-name {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #ebedef;
+}
+
+#dialogue-name h2{
+	font-size: 17px;
+    margin-bottom: 10px;
+    margin-left: 17px;
+    color: #3f5368;
+}
+
+#dialogue-name a{
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	color: #3f5368;
+	text-decoration: none;
+}
+#dialogue-name img{
+	position: absolute;
+	top: -3px;
+    right: 115px;
+}
+
+#message-list h2 {
+	width: 50%;
+	font-size: 17px;
+	margin-bottom: 5px;
+	color: #3f5368;
+}
+
+#messages ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+#messages ul li {
+	position: relative;
+	padding: 10px;
+	margin: 10px;
+	border: 1px #ebedef solid;
+    border-radius: 8px;
+}
+
+#messages ul li a {
+	text-decoration: none;
+	color: #3f5368;
+}
+
+#messages ul .user {
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right: 10px;
+}
+
+#messages ul .user img {
+	width: 100%;
+	height: 100%;
+}
+
+#messages ul img {
+	width: 80%;
+}
+
+#messages ul h2,
+#messages ul p {
+	margin: 0;
+	color: #3f5368;
+}
+
+#messages ul .msg {
+	color: #3f5368;
+	width: 75%;
+	margin-left: 50px;
+}
+
+#messages ul .time {
+	position: absolute;
+	font-size: 14px;
+	top: 10px;
+	right: 10px;
+	color: #ababab;
+}
+
+#messages ul .remove {
+	/*position: absolute;*/
+	display: block;
+	font-size: 14px;
+	/*bottom: 10px;
+	right: 10px;*/
+	float: right;
+	margin-top: -15px;
+	color: #ababab;
+	cursor: pointer;
+}
+
+#messages ul .remove a {
+	color: #ababab;
+}
+
+#message-form {
+	padding: 10px;
+	height: calc(20% - 20px);
+	border-top: 1px solid #ebedef;;
+	background-color: #F5F5F5;
+}
+
+#message-form textarea {
+	width: 75%;
+	height: 17px;
+	border: 1px #a4a5a7 solid;
+	border-radius: 8px;
+	outline: none;
+	padding: 10px;
+}
+
+#message-form .user {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+#message-form button {
+	outline: none;
+	background: none;
+	width: 10%;
+	height: 38px;
+	border: 1px #a4a5a7 solid;
+	border-radius: 8px;
+	cursor: pointer;
+	float: right;
+}
+
+#message-form button:active {
+	background: #71c2ff;
+}
+
+#message-form img {
+	width: 100%;
+	height: 100%;
+}
+
+#footer {
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	background: white;
+	border-top: 1px solid #ebedef;
+}
+
+#footer-text {
+	width: 800px;
+	margin: 0 auto;
+	color: #7b7b7b;
+	font-size: 14px;
+}
+
+/*Стили модальных окон*/
+
+.modal {
+	width: 360px;
+	background: white;
+	border: 1px #a4a5a7 solid;
+	border-radius: 8px;
+	position: absolute;
+	top: 100px;
+	left: calc(50% - 200px);
+	padding: 20px;
+	max-height: 400px;
+	display: none;
+	z-index: 9999;
+}
+
+.modal .content {
+	height: 350px;
+	margin-top: 20px;
+	overflow-y: auto;
+}
+
+.modal .content img {
+	width: 40%;
+	/*height: 100%;*/
+}
+
+.modal .close {
+	position: absolute;;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+#contacts ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+#contacts ul li {
+	position: relative;
+	padding: 10px;
+}
+
+#contacts ul li a {
+	text-decoration: none;
+	color: #3f5368;
+}
+
+#contacts ul .user {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-right: 10px;
+}
+
+#contacts ul .user img {
+	width: 100%;
+	height: 100%;
+}
+
+#contacts ul h2 {
+	margin: 10px;
+	color: #3f5368;
+}
+
+.content-log {
+	height: 150px;
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+#log input {
+	width: 80%;
+	border: 1px #a4a5a7 solid;
+	border-radius: 8px;
+	height: 26px;
+	padding: 0 10px;
+	float: left;
+	margin: 10px;
+	outline: none;
+}
+
+#log button {
+	width: 20%;
+	height: 20%;
+	border: 1px #a4a5a7 solid;
+	border-radius: 8px;
+	float: left;
+	margin: 10px;
+	outline: none;
+}
+
+#log button:active {
+	background: #ff9800;
+}
+
+.inout {
+	width: 200px;
+	color: #3f5368;
+	height: auto;
+	margin: 0 auto;
+}
+
+.inout h2 {
+	text-align: center;
+}
+
+#formRegister, #formLogin {
+	margin-left: 10px;
+}
+
+
+/*Стили скроллбара*/
+
+#list::-webkit-scrollbar-track,
+#message-list::-webkit-scrollbar-track,
+.modal .content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#list::-webkit-scrollbar,
+#message-list::-webkit-scrollbar,
+.modal .content::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+#list::-webkit-scrollbar-thumb,
+#message-list::-webkit-scrollbar-thumb,
+.modal .content::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+
+/*Стиль талицы мироприятий*/
+
+.table_blur {
+  /*background: #f5ffff;*/
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: left;
+  color: #3f5368;
+}
+.table_blur th {
+  border-top: 1px solid #777777;	
+  border-bottom: 1px solid #777777; 
+  box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;
+  background: linear-gradient(#9595b6, #5a567f);
+  color: white;
+  padding: 10px 15px;
+  position: relative;
+}
+.table_blur th:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  height: 25%;
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255,255,255,.08));
+}
+.table_blur tr:nth-child(odd) {
+  background: #ebf3f9;
+}
+.table_blur th:first-child {
+  border-left: 1px solid #777777;	
+  border-bottom:  1px solid #777777;
+  box-shadow: inset 1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+.table_blur th:last-child {
+  border-right: 1px solid #777777;
+  border-bottom:  1px solid #777777;
+  box-shadow: inset -1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+.table_blur td {
+  border: 1px solid #e3eef7;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.table_blur tbody:hover td {
+  color: transparent;
+  text-shadow: 0 0 3px #a09f9d;
+}
+.table_blur tbody:hover tr:hover td {
+  color: #444444;
+  text-shadow: none;
+}
+
+/*Стиль талицы списка уроков*/
+
+.table_dark {
+  font-size: 14px;
+  width: 90%;
+  text-align: left;
+  border-collapse: collapse;
+  background: #ebf3f9;
+  margin: 0 auto;
+}
+.table_dark th {
+  color: #3f5368;
+  border-bottom: 1px solid grey;
+  padding: 12px 17px;
+}
+.table_dark td {
+  color: #3f5368;
+  border-bottom: 1px solid grey;
+  border-right:1px solid grey;
+  padding: 7px 17px;
+}
+.table_dark tr:last-child td {
+  border-bottom: none;
+}
+.table_dark td:last-child {
+  border-right: none;
+}
+/*.table_dark tr:hover td {
+  text-decoration: underline;
+}*/
+
+/*Стиль профиля*/
+
+.bullet {
+width: 50%;
+margin: 0 auto;
+padding-left: 0;
+padding-top: 20px;
+list-style: none;
+counter-reset: li;
+}
+.bullet li {
+position: relative;
+margin-bottom: 1.5em;
+border: 2px solid #ebedef;
+padding: 0.6em;
+border-radius: 8px;
+background: #FEFEFE;
+color: #3f5368;
+}
+.bullet li:before {
+position: absolute;
+top: -0.7em;
+padding-left: 0.4em;
+padding-right: 0.4em;
+font-size: 14px;
+font-weight: bold;
+color: #98d2ff;
+background: #FEFEFE;
+border-radius: 50%;
+counter-increment: li;
+content: counter(li);
+}
